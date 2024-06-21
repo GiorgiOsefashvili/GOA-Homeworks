@@ -1,0 +1,22 @@
+.gio{
+    position: relative;
+    left: 300px;
+    background-color: hsl(244, 95%, 50%);
+    color: black;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.GOA{
+    position: relative;
+    left: 600px;bottom: 150px;
+    background-color: darkgreen;
+    color:black;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+
+}
