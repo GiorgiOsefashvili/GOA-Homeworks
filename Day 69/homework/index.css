@@ -1,0 +1,43 @@
+.div1
+{
+    width: 500px;
+    height: 300px;
+    transform: translate(400px,200px);
+    background-color: green;
+    border: 1px blue;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes colorchange
+{
+    0%{
+        background-color: brown;
+        height: 400px;
+        width: 200px;
+    }
+    20%{background-color: red;
+    height: 200px;
+    width: 200px;
+    transform: rotate(30deg);}
+    
+    40%{background-color: aqua;
+        height: 200px;
+        width: 200px;}
+
+    60%{background-color: blue;
+        height: 100px;
+        width: 100px;}
+
+    80%{background-color: green;
+        height: 100px;
+        width: 100px;}
+    
+    100%{background-color: yellow;
+        height: 300px;
+        width: 600px;}
+}
