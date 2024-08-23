@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<body>
+
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordMessage" style="color: rgb(3, 107, 126);"></span>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const passwordField = document.getElementById('password');
+        const messageSpan = document.getElementById('passwordMessage');
+
+        passwordField.addEventListener('input', function() {
+            if (passwordField.value.length < 8) {
+                messageSpan.textContent = 'Password must be at least 8 characters long.';
+            } else {
+                messageSpan.textContent = '';
+            }
+        });
+    </script>
+
+</body>
+</html>

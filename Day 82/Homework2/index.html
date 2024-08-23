@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For cicles</title>
+</head>
+<body>
+
+<h1>For cicles</h1>
+
+<script>
+
+    for (let i = 1; i <= 5; i++) {
+        console.log(i);
+    }
+
+    let fruits = ["apple", "banana", "cherry"];
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+
+    let total = 0;
+    for (let i = 1; i <= 10; i++) {
+        total += i;
+    }
+    console.log("Sum:", total);
+
+    for (let i = 10; i >= 1; i--) {
+        console.log(i);
+    }
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(i * i);
+    }
+
+    for (let i = 2; i <= 20; i += 2) {
+        console.log(i);
+    }
+
+    let word = "hello";
+    let reversed = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+        reversed += word[i];
+    }
+    console.log("Reversed:", reversed);
+
+    let product = 1;
+    for (let i = 1; i <= 5; i++) {
+        product *= i;
+    }
+    console.log("Product:", product);
+
+    let greeting = "Hi";
+    for (let i = 0; i < greeting.length; i++) {
+        console.log(`Index ${i}: ${greeting[i]}`);
+    }
+
+    for (let i = 1; i <= 10; i++) {
+        console.log(i * 5);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+</head>
+<body>
+
+    <form id="colorForm">
+        <label for="colorSelect">Choose a color:</label>
+        <select id="colorSelect">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="colorDisplay" style="margin-top: 10px; padding: 10px; border: 1px solid #000;">Selected Color: None</div>
+
+    <script>
+
+        const colorSelect = document.getElementById('colorSelect');
+        const colorDisplay = document.getElementById('colorDisplay');
+        const form = document.getElementById('colorForm');
+
+
+        colorSelect.addEventListener('change', function() {
+
+            colorDisplay.textContent = `Selected Color: ${colorSelect.value}`;
+
+            colorDisplay.style.backgroundColor = colorSelect.value.toLowerCase();
+        });
+
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted with selected color: ' + colorSelect.value);
+        });
+    </script>
+
+</body>
+</html>
+
