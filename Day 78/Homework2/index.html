@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index JS</title>
+</head>
+<body>
+
+    <div id="Box" style="width: 400px; height: 400px; background-color: rgb(163, 161, 161);">Goa is the best</div>
+
+    <button onclick="changeColor('red')">Red</button><br>
+    <button onclick="changeColor('blue')">Blue</button><br>
+    <button onclick="changeColor('pink')">Pink</button><br>
+    <button onclick="changeColor('Yellow')">Yellow</button><br>
+    <button onclick="changeColor('green')">Green</button><br>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById('Box').style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
