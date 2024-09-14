@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#score div {
+    margin: 0 20px;
+}
+
+#newGameBtn {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-size: 24px;
+}
